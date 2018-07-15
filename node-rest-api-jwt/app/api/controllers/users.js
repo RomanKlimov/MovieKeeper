@@ -34,4 +34,7 @@ module.exports = {
             }
         });
     },
-}
+    // hello: function (req, res, next) {
+    //     res.json({message: "hello there"});
+    // },
+};

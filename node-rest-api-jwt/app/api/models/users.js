@@ -21,7 +21,8 @@ const UserSchema = new Schema({
         type: String,
         trim: true,
         required: true
-    }
+    },
+    movies: [{ type: Schema.Types.ObjectId, ref: 'Movie'}]
 });
 // hash user password before saving into database
 UserSchema.pre('save', function(next){
